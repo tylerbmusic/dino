@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dino Game Settings</title>
+        <style>
+            input {
+                left: 40%;
+                position: absolute;
+            }
+            body {
+                background: #222;
+                color: #ccc;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <a id="backToDino" href="index.html" style="position: absolute;right: 10%;font-size: xx-large;color: rgb(138,180,248);text-decoration: none;">Back</a>
+        <div id="settings">
+            <h3>Settings</h3>
+            <label for="djEnabled">Enable Double Jump</label>
+            <input id="djEnabled" type="checkbox" onclick="localStorage.setItem('djEnabled', (this.checked) ? '1' : '0')">
+            <br>
+            <label for="djAmount">Number of double jumps allowed</label>
+            <input id="djAmount" type="number" step="1" onchange="localStorage.setItem('djAmount', this.value.toString())">
+            <hr>
+            <label for="rrEnabled">Enable Road Runner Mode (W goes up, S goes down)</label>
+            <input id="rrEnabled" type="checkbox" onclick="localStorage.setItem('rrEnabled', (this.checked) ? '1' : '0')">
+            <hr>
+            <label for="potEnabled">Enable Potato Mode</label>
+            <input id="potEnabled" type="checkbox" onclick="localStorage.setItem('potEnabled', (this.checked) ? '1' : '0')" >
+        </div>
+        <div id="themes">
+            <h3>Themes</h3>
+            <label for="tNone">None</label>
+            <input type="radio" id="tnone" onclick="localStorage.setItem('theme', 'none'); localStorage.setItem('scale', '1');"><br>
+            <label for="tInterlochen">Interlochen</label>
+            <input type="radio" id="tInterlochen" onclick="localStorage.setItem('theme', 'Interlochen'); localStorage.setItem('scale', '5')"><br>
+            <input type="radio" id="tKasey" onclick="localStorage.setItem('theme', 'Kasey'); localStorage.setItem('scale', '5')"><br>
+            <label for="tKasey">Kasey</label>
+        </div>
+        <script>
+            document.getElementById("djEnabled").checked = (localStorage.getItem('djEnabled') == '1') ? true : false;
+            document.getElementById("djAmount").value = Number(localStorage.getItem('djAmount'));
+            document.getElementById("rrEnabled").checked = (localStorage.getItem('rrEnabled') == '1') ? true : false;
+            document.getElementById("potEnabled").checked = (localStorage.getItem('potEnabled') == '1') ? true : false;
+            let theme = localStorage.getItem("theme") || 'none';
+            document.getElementById('t' + theme).checked = true;
+        </script>
+    </body>
+</html>
