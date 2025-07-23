@@ -11,6 +11,7 @@ setTimeout(() => {
     const currVersion = 0.1;
     //let f = await fetch('todo');
     })();
+    Runner().isDarkMode = true; //Error handling go brrrr
     
     document.body.style.overflow = 'hidden';
 

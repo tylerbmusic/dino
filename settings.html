@@ -33,11 +33,11 @@
         <div id="themes">
             <h3>Themes</h3>
             <label for="tNone">None</label>
-            <input type="radio" id="tnone" onclick="localStorage.setItem('theme', 'none'); localStorage.setItem('scale', '1');"><br>
+            <input type="radio" name="onlyradiohere" id="tnone" onclick="localStorage.setItem('theme', 'none'); localStorage.setItem('scale', '1');"><br>
             <label for="tInterlochen">Interlochen</label>
-            <input type="radio" id="tInterlochen" onclick="localStorage.setItem('theme', 'Interlochen'); localStorage.setItem('scale', '5')"><br>
-            <input type="radio" id="tKasey" onclick="localStorage.setItem('theme', 'Kasey'); localStorage.setItem('scale', '5')"><br>
+            <input type="radio" name="onlyradiohere" id="tInterlochen" onclick="localStorage.setItem('theme', 'Interlochen'); localStorage.setItem('scale', '5')"><br>
             <label for="tKasey">Kasey</label>
+            <input type="radio" name="onlyradiohere" id="tKasey" onclick="localStorage.setItem('theme', 'Kasey'); localStorage.setItem('scale', '5')"><br>
         </div>
         <script>
             document.getElementById("djEnabled").checked = (localStorage.getItem('djEnabled') == '1') ? true : false;
