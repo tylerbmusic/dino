@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>You Won Dinopoly!</title>
+  <style>
+    body {
+      background-color: #11222b;
+      color: #e0e1dd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      display: flex;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: white;
+      text-shadow: 0 0 10px #3e1818;
+    }
+    img.logo {
+      width: 500px;
+      max-width: 90%;
+      margin-bottom: 40px;
+      filter: drop-shadow(0 0 20px #004d5c);
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    a.button {
+      text-decoration: none;
+      background-color: #b60000;
+      color: #e0e1dd;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    a.button:hover {
+      background-color: #8a0202;
+      transform: scale(1.05);
+    }
+    .containing-div {
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px solid #334;
+        box-shadow: 0 0 50px 0 #501500;
+        background: linear-gradient(134deg, #ffffff1a, transparent);
+        }
+  </style>
+</head>
+<body>
+    <div class="containing-div">
+        <h1>Congratulations!<br>You Won</h1>
+        <img class="logo" src="dinopoly/logo.png" alt="Dinopoly Logo">
+        <div class="button-container">
+            <a class="button" href="credits.html">Credits</a>
+            <a class="button" href="settings.html">Settings</a>
+            <a class="button" href="index.html">Retry</a>
+        </div>
+  </div>
+</body>
+</html>
