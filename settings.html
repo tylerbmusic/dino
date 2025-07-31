@@ -28,7 +28,10 @@
             <input id="rrEnabled" type="checkbox" onclick="localStorage.setItem('rrEnabled', (this.checked) ? '1' : '0')">
             <hr>
             <label for="potEnabled">Enable Potato Mode</label>
-            <input id="potEnabled" type="checkbox" onclick="localStorage.setItem('potEnabled', (this.checked) ? '1' : '0')" >
+            <input id="potEnabled" type="checkbox" onclick="localStorage.setItem('potEnabled', (this.checked) ? '1' : '0')">
+            <hr>
+            <label for="mpEnabled">Enable Capitalism (Dinopoly)</label>
+            <input id="mpEnabled" type="checkbox" onclick="localStorage.setItem('mpEnabled', (this.checked) ? '1' : '0')">
         </div>
         <div id="themes">
             <h3>Themes</h3>
@@ -44,6 +47,7 @@
             document.getElementById("djAmount").value = Number(localStorage.getItem('djAmount'));
             document.getElementById("rrEnabled").checked = (localStorage.getItem('rrEnabled') == '1') ? true : false;
             document.getElementById("potEnabled").checked = (localStorage.getItem('potEnabled') == '1') ? true : false;
+            document.getElementById("mpEnabled").checked = (localStorage.getItem('mpEnabled') == '1') ? true : false;
             let theme = localStorage.getItem("theme") || 'none';
             document.getElementById('t' + theme).checked = true;
         </script>

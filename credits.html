@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Credits</title></head>
+    <body style="background: #222;color: #ddd;font-family: sans-serif;width: 100%;height: 100%;margin: 0;position: fixed;">
+        <style>
+            .a {
+                font-size: 50px;
+            font-weight: bold;
+            }
+            .b {
+                font-size: 35px;
+            font-weight: bold;
+            }
+            .gradient-blur {
+              position: fixed;
+              z-index: 5;
+              inset: 0 0 auto 0;
+              height: 30%;
+              pointer-events: none;
+            }
+            .gradient-blur > div,
+            .gradient-blur::before,
+            .gradient-blur::after {
+              position: absolute;
+              inset: 0;
+            }
+            .gradient-blur::before {
+              content: "";
+              z-index: 1;
+              backdrop-filter: blur(1px);
+              mask: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 1) 25%,
+                rgba(0, 0, 0, 1) 50%,
+                rgba(0, 0, 0, 0) 75%
+              );
+            }
+            .gradient-blur > div:nth-of-type(1) {
+              z-index: 2;
+              backdrop-filter: blur(8px);
+              mask: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0) 25%,
+                rgba(0, 0, 0, 1) 50%,
+                rgba(0, 0, 0, 1) 75%,
+                rgba(0, 0, 0, 0) 100%
+              );
+            }
+            .gradient-blur > div:nth-of-type(2) {
+              z-index: 3;
+              backdrop-filter: blur(27px);
+              mask: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0) 50%,
+                rgba(0, 0, 0, 1) 75%,
+                rgba(0, 0, 0, 1) 100%
+              );
+            }
+            /*.gradient-blur > div:nth-of-type(3) {
+              z-index: 4;
+              backdrop-filter: blur(4px);
+              mask: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 37.5%,
+                rgba(0, 0, 0, 1) 50%,
+                rgba(0, 0, 0, 1) 62.5%,
+                rgba(0, 0, 0, 0) 75%
+              );
+            }
+            .gradient-blur > div:nth-of-type(4) {
+              z-index: 5;
+              backdrop-filter: blur(8px);
+              mask: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 50%,
+                rgba(0, 0, 0, 1) 62.5%,
+                rgba(0, 0, 0, 1) 75%,
+                rgba(0, 0, 0, 0) 87.5%
+              );
+            }
+            .gradient-blur > div:nth-of-type(5) {
+              z-index: 6;
+              backdrop-filter: blur(16px);
+              mask: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 62.5%,
+                rgba(0, 0, 0, 1) 75%,
+                rgba(0, 0, 0, 1) 87.5%,
+                rgba(0, 0, 0, 0) 100%
+              );
+            }
+            .gradient-blur > div:nth-of-type(6) {
+              z-index: 7;
+              backdrop-filter: blur(32px);
+              mask: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 75%,
+                rgba(0, 0, 0, 1) 87.5%,
+                rgba(0, 0, 0, 1) 100%
+              );
+            }*/
+            .gradient-blur::after {
+              content: "";
+              z-index: 8;
+              backdrop-filter: blur(64px);
+              mask: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0) 75%,
+                rgba(0, 0, 0, 1) 100%
+              );
+            }
+        </style>
+        <h1 id="h1" style="position: relative;text-align: center; white-space: nowrap; overflow: hidden; transition: 2s;transition-timing-function: ease-in;z-index: 100;">Click/tap anywhere to start the credits</h1>
+        <div style="text-align: center; font-size: 27px; line-height: 100px; position: fixed; left: 0px; width: 100%; height: 100%; top: 6000px;" id="credits">
+            <span class="A">Dino Game Credits</span><br>
+            Original Dino Game - © 2022 The Chromium Authors<br>
+            Modified version - © 2025 Tyler Bialowas<br>
+            Extras - Tyler Bialowas<br>
+            <hr>
+            <span class="B">PICTURES</span><br>
+            "Interlochen" and the Interlochen logo are trademarks of Interlochen Center for the Arts.<br>
+            Trey Devey picture - Mark Lyons, modified by Tyler Bialowas<br>
+            "Dissapointed Devey" - Interlochen Center for the Arts, modified by Tyler Bialowas<br>
+            Esther Triggs - Modified by Tyler Bialowas<br>
+            Cabin, Sand - Blue LaVa Media, modified by Tyler Bialowas<br>
+            Stately Pines - Tree Montgomery, Pngtree, modified by Tyler Bialowas<br>
+            Kasey Higginbotham's head - Hoops HD, modified by Tyler Bialowas<br>
+            Silver Tuba - John Packer JP278S BBb Tuba in Silver Plate (accessed at Austin Custom Brass), modified by Tyler Bialowas<br>
+            Dinopoly Logo - Tyler Bialowas<br>
+            <hr>
+            <span class="B">MUSIC</span><br>
+            Super Mario Galaxy Staff Credits - Mahito Yokota<br>
+            Gusty Garden Galaxy - Mahito Yokota<br>
+            Something Else - Tyler Bialowas<br>
+            A New Journey - Tyler Bialowas<br>
+            Something - Tyler Bialowas<br>
+            Monopoly Tycoon OST - Marc-Antoine Giguère<br>
+        </div>
+        <button style="position: fixed; top: calc(75% + 1px); width: calc(10% - 2px); height: calc(10% - 2px); left: calc(45% + 1px); background: rgba(68, 68, 68, 0.8); border: 1px solid rgb(136, 136, 153); border-radius: 20px; text-align: center; display: inline-block; backdrop-filter: blur(2px); box-shadow: rgb(124, 124, 124) 0px 0px 7px 0px inset, black 0px 0px 20px 4px; opacity: 0;" id="backBtn">
+            <a href="index.html" style="text-decoration: none;color: rgb(138,180,248);font-size: 20px;">Back to game</a>
+        </button>
+        <div class="gradient-blur"><div></div><div></div><div></div><div></div></div>
+        <script>
+            const music = new Audio('credits.mp3');
+            var creditsStarted = false;
+            function scrollCredits() {
+                if (creditsStarted) {
+                    return;
+                }
+                console.log('func');
+                document.getElementById('h1').style.fontSize = '80px';
+                document.getElementById('h1').style.opacity = '0';
+                creditsStarted = true;
+                music.play();
+                let credits = document.getElementById('credits');
+                let back = document.getElementById('backBtn');
+                var top = window.innerHeight;
+                credits.style.top = top + 'px';
+                var lastDate = Date.now();
+                var speed = (credits.scrollHeight+window.outerHeight)/80;
+                let interval = setInterval(() => {
+                    let dt = (Date.now()-lastDate)/1000;
+                    let opacity = ((0-top)-(credits.scrollHeight-window.innerHeight))/200;
+                    back.style.opacity = Math.max(0, Math.min(1, opacity));
+                    top -= speed*dt;
+                    if ((0-top) < credits.scrollHeight) {
+                        credits.style.top = top + 'px';
+                    } else {
+                        credits.style.top = (0-credits.scrollHeight) + 'px';
+                        clearInterval(interval);
+                        console.log("Finished credits.");
+                    }
+                    lastDate = Date.now();
+                }, 10);
+            }
+            document.body.addEventListener('pointerdown', () => {scrollCredits()});
+        </script>
+    </body>
+</html>
