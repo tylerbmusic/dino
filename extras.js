@@ -1017,7 +1017,7 @@ setTimeout(() => {
                     updateMoney();
                     break;
                 case 8: 
-                    let amt = 10*Math.floor(Math.random()*60)+1
+                    let amt = 10*Math.floor(Math.random()*60)+10
                     showMessage('Community Chest', 'It is your birthday. Your grandmother gives you $' + amt);
                     money += amt;
                     enableRoll();
@@ -1162,6 +1162,8 @@ setTimeout(() => {
                 window.showMessage('Dinopoly', 'You landed on ' + place.title + '.');
                 document.getElementById('buy').style.display = 'initial';
                 if (place.owned) {
+                    money += place.rent;
+                    updateMoney();
                     enableRoll();
                     return;
                 }
